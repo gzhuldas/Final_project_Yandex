@@ -81,7 +81,27 @@ group — the test group the user belonged to<br>
 6. Step 2 conclusion.
 #### Step 3. A/B test. 
 1. Analyze A/B test results.
-2. Perform z-test. 
+2. Perform z-test.
+
+## Examples of graphs:
+
+![image](https://github.com/gzhuldas/Final_project_Yandex/assets/72769986/490520f2-6bb9-4683-bf3b-e193c00fa5f7)
+
+![image](https://github.com/gzhuldas/Final_project_Yandex/assets/72769986/dcd76941-3698-44e6-aa30-607dd325ec97)
+
+![image](https://github.com/gzhuldas/Final_project_Yandex/assets/72769986/5b6fca5c-af1a-493e-b73d-7913a3a503a1)
+
+![image](https://github.com/gzhuldas/Final_project_Yandex/assets/72769986/da2d49f1-40fc-443c-a38a-c09e7c475da4)
+
+![image](https://github.com/gzhuldas/Final_project_Yandex/assets/72769986/de796be2-13e9-43aa-8caa-b86e3a98ef56)
+
+![image](https://github.com/gzhuldas/Final_project_Yandex/assets/72769986/39a74a46-5e34-447f-a24f-acbeb62e6fa0)
+
+![image](https://github.com/gzhuldas/Final_project_Yandex/assets/72769986/d1883f76-866c-4aa7-a1a3-82223028121c)
+
+![image](https://github.com/gzhuldas/Final_project_Yandex/assets/72769986/aea32ad0-07ed-470b-9a2a-67eda215242a)
+
+
 #### Conclusion
 The loyalty program has shown to be quite successful as clients who sighed up for it actually are more consistent and make as big and sometimes even bigger purchases than the general customers.Unfortunately, it was not possible to identify which offers, discounts and products were exclusive to loyalty program customers but it seems like the most popular products among these clients are available for general customers as well.LPCs are very consistent and most of them bought products on a regular basis, the analysis identified at least 20 people who made more than 5 purchases, all of them are probably LPCs.Even though the cohort analysis has shown that the number of customers decreased each consecutive month  (except for December cohort when some clients returned in February), the average transactions number stayed the same or even increased for some months.
 
