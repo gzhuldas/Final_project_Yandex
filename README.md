@@ -71,7 +71,7 @@ group — the test group the user belonged to<br>
 
 ## A/B test Plan:
 
-### Step 1. Preprocessing. Find and replace missing values, drop duplicates, change datatypes where needed.\
+#### Step 1. Preprocessing. Find and replace missing values, drop duplicates, change datatypes where needed.
 #### Step 2. EDA. Answer the questions and make conclusions:
 1. Study conversion at different stages of the funnel.
 2. Is the number of events per user distributed equally among the samples?
@@ -83,3 +83,15 @@ group — the test group the user belonged to<br>
 1. Analyze A/B test results.
 2. Perform z-test. 
 #### Conclusion
+The loyalty program has shown to be quite successful as clients who sighed up for it actually are more consistent and make as big and sometimes even bigger purchases than the general customers.Unfortunately, it was not possible to identify which offers, discounts and products were exclusive to loyalty program customers but it seems like the most popular products among these clients are available for general customers as well.LPCs are very consistent and most of them bought products on a regular basis, the analysis identified at least 20 people who made more than 5 purchases, all of them are probably LPCs.Even though the cohort analysis has shown that the number of customers decreased each consecutive month  (except for December cohort when some clients returned in February), the average transactions number stayed the same or even increased for some months.
+
+The EDA was divided into following steps: events funnel, number of events per user, events distribution among days and search for peculiarities in the data. The funnel analyzed in this project showed the number of times one user went through one stage, i.e. one user could have logged in multiple times and it is still represented in the funnel. Counting unique or nonunique user ids at each funnel stage does not change one important observation - according to the funnel the final step 'purchases' has larger number of users than the previous step 'product cart'. This is probably due to the 'Buy Now' button or other options which can offer users to buy products skipping some steps and go directly to the purchase stage. 
+
+The number of events were analyzed for AB groups. Group B has much less users but the average amount of events per user is comparable to that of group A, which means that users from group B visit the site more often. There are no users who are present in both groups. The number of events ditribution among days showed that it was decreasing till 2020-12-13 and then it spiked and continued to increase till 2020-12-21, which is due to the fact that no new users were accepted for the test. Right after Christmas Eve the number of events gradually decreased to 0.
+
+There were users who skipped some steps as well as those who went through all of them. The data investigation showed that some users skipped all steps and went directly to the purchase stage. Some part of users skipped product cart stage. The data actually has two funnel stage types: login->product_page->purchase and login->product_page->product_cart->purchase. These peculiarities in the dataset were taken into account before hypothesis testing
+
+Hypotheses testing part includes 4 hypotheses which correspond to each funnel stage. Daily conversion rate graphs were analyzed for two groups. Group B showed better results for some conversion stages, more specifically product_page->product_cart and product_page->purchase. In general the graphs are a little distorted as the data was not divided into different funnel types. 
+
+The statistical significance of difference between groups' conversion rates was checked. According to the test group A showed better results for these stages of funnel: login -> product page and product page -> purchase. Other funnel stages did not show any statistical difference. This means that the expected results were not achieved and the company should should stop the test since the expected number of participants was reached and the test did not show desirable results.
+
